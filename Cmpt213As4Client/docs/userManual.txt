@@ -1,0 +1,16 @@
+My Consumable Tracker User Manual:
+
+When application is run, the user is shown a large title, 4 buttons (Display all, expired, non-expired, expiring in 7 days), one large scroll pane
+which displays the current items inside, if there are none they are shown "No items to display", a button to add an item, and remove an item. When the
+user clicks on the add item button, they are prompted with a dialog which allows them to add an item. It contains fields and labels and two additional
+buttons create item and return. They can not leave any field other than notes empty, if they do and try to create item they are prompting with an alert
+dialog using joptionpane prompting them to enter in the value. If the user decides they do not want to add an item, they can click the return button
+which will send them back to the main screen. If they enter in all the information and click create, their newly made item will be created and added
+to the arraylist which will be displayed onto the scroll pane. If the user clicks on the remove button, they are shown the items which are in the list,
+and they can choose which one they want to delete by typing in the index of the item. If they enter an invalid index an alert dialog pops up prompting
+them to choose a correct index. If the index is valid the item is removed and the main screen gets updated showing the correct amount of items. If the
+user does not want to remove an item they can click the return button which will send them back to the main screen. The user then has more options
+of buttons to choose from on the main screen. Once they are clicked they either show the expired, non-expired, or items expiring in 7 days. If none of
+these exist then the user is shown a message saying no items "expiring, or are not expired or expiring in 7 days". If the user wants to exit the
+application, they can click the x button on the main frame, they are then prompted with a dialog asking if they want to exit and save the items stored.
+If they click yes the program exits and saves,if they click no, the program goes does not close.

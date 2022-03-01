@@ -1,0 +1,33 @@
+Operating System used to develop code: Windows 10, tested commands on MobaXterm
+
+Get system message: curl -i -H "Content-Type: application/json" -X GET localhost:8080/ping
+
+Get all items : curl -i -H "Content-Type: application/json" -X GET localhost:8080/listAll
+
+Get expired items: curl -i -H "Content-Type: application/json" -X GET localhost:8080/listExpired
+
+Get non expired items: curl -i -H "Content-Type: application/json" -X GET localhost:8080/listNonExpired
+
+Get items expiring in 7 days : curl -i -H "Content-Type: application/json" -X GET localhost:8080/listExpiringIn7Days
+
+Add food item: curl -i -H "Content-Type: application/json" -X POST -d '{
+               "name":"testFood",
+               "notes":"testFood",
+               "price":1.0,
+               "size":1.0,
+               "expiryDate":"2021-11-04T00:00",
+               "type":1
+               }' localhost:8080/addFood
+
+Add drink item : curl -i -H "Content-Type: application/json" -X POST -d '{
+                 "name":"testDrink",
+                 "notes":"testDrink",
+                 "price":1.0,
+                 "size":1.0,
+                 "expiryDate":"2021-11-04T00:00",
+                 "type":2
+                 }' localhost:8080/addDrink
+
+Remove item: curl -i -H "Content-Type: application/json" -X POST localhost:8080/removeItem/2
+
+Exit: curl -i -H "Content-Type: application/json" -X GET localhost:8080/exit
